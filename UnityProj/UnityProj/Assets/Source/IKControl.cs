@@ -19,13 +19,10 @@ public sealed class IKControl : MonoBehaviour
         {
             if (_isIKActive)
             {
-                if (_isIKActive)
+                if (_lookObj != null)
                 {
-                    if (_lookObj != null)
-                    {
-                        _animator.SetLookAtWeight(1);
-                        _animator.SetLookAtPosition(_lookObj.position);
-                    }
+                   _animator.SetLookAtWeight(1);
+                    _animator.SetLookAtPosition(_lookObj.position);
                 }
             }
             else
